@@ -25,7 +25,7 @@ export default function Navbar() {
           <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
             <span className="text-primary-foreground font-black text-sm">RR</span>
           </div>
-          <span className="font-display font-black text-xl text-heading tracking-tight">
+          <span className="font-display font-black text-xl text-black tracking-tight">
             Rapid Response Pipes
           </span>
         </div>
@@ -35,7 +35,7 @@ export default function Navbar() {
             <a
               key={item}
               href={`#${item.toLowerCase().replace(" ", "-")}`}
-              className="text-foreground/80 hover:text-foreground text-sm font-medium transition-colors duration-200 relative group"
+              className="text-black/80 hover:text-black text-sm font-medium transition-colors duration-200 relative group"
             >
               {item}
               <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
@@ -52,7 +52,7 @@ export default function Navbar() {
           </a>
           <button
             onClick={() => setOpen(!open)}
-            className="md:hidden text-foreground p-2"
+            className="md:hidden text-black p-2"
           >
             {open ? <X size={22} /> : <Menu size={22} />}
           </button>
@@ -66,7 +66,7 @@ export default function Navbar() {
               key={item}
               href={`#${item.toLowerCase().replace(" ", "-")}`}
               onClick={() => setOpen(false)}
-              className="text-foreground/80 text-base font-medium"
+              className="text-black/80 text-base font-medium hover:text-black transition-colors"
             >
               {item}
             </a>
